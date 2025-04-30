@@ -1,0 +1,5 @@
+I want to make an embeddable visual view of a google spreadsheet. can you copy the way that I fetch data in this file @https://gitlab.com/annie-elequin/ifctools/-/blob/main/src/api/index.ts 
+
+then set it up to where I can add a constant that is the URL of the spreadsheet to fetch data. I will have more tasks for you to implement once I have the skeleton of fetching the google spreadsheet data in place. 
+
+lets make this a normal React web app. 
