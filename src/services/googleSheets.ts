@@ -14,9 +14,14 @@ export interface SheetData {
 
 export async function getGoogleSheetsData(): Promise<SheetData | null> {
   try {
-    // Extract spreadsheet ID from URL
+    console.log('Attempting to fetch spreadsheet data...');
+    console.log('SPREADSHEET_URL:', SPREADSHEET_URL);
+    
     const spreadsheetId = extractSpreadsheetId(SPREADSHEET_URL);
+    console.log('Extracted spreadsheetId:', spreadsheetId);
+    
     if (!spreadsheetId) {
+      console.error('Invalid spreadsheet URL. URL provided:', SPREADSHEET_URL);
       throw new Error('Invalid spreadsheet URL');
     }
 
